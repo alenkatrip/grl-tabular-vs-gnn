@@ -148,15 +148,11 @@ activemq-data/
 # SageMath parsed files
 *.sage.py
 
-# Environments
-.env
-.envrc
+# Virtual Environments
 .venv
-env/
 venv/
+env/
 ENV/
-env.bak/
-venv.bak/
 
 # Spyder project settings
 .spyderproject
@@ -217,7 +213,6 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
-.venv/
 
 # Data files
 data/raw/*
@@ -231,5 +226,13 @@ results/figures/*
 !results/metrics/.gitkeep
 !results/figures/.gitkeep
 
-# Local working docs
+# Local working documents and references
 .local/
+
+# macOS and VSCode specific files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# VS Code (optional)
+.vscode/
