@@ -230,3 +230,9 @@ results/metrics/*
 results/figures/*
 !results/metrics/.gitkeep
 !results/figures/.gitkeep
+
+# Local course material
+practicals/
+
+# Internal notes
+docs/briefing.md
