@@ -1,21 +1,19 @@
 # GRL: Tabular Models vs Graph Neural Networks
 
-Mini project for the TU Wien Graph Representation Learning course: comparing tabular ML approach with GNN
-
-## Research Question
-
-Can graph neural networks improve prediction on tabular datasets after constructing a similarity graph over the samples?
+Mini-project for the TU Wien Graph Representation Learning course: comparing standard tabular regression models with graph-based models built on similarity graphs over tabular samples.
 
 ## Datasets
 
-- Industrial parts pricing dataset (from Excel)
-- sklearn Diabetes dataset
+- `sklearn` Diabetes dataset
+- Industrial parts pricing dataset for castings in `data/raw/Castings_technical_dataset_csv.csv`
 
 ## Models
 
+- Linear Regression
 - Ridge Regression
 - Random Forest
 - MLP
+- GNN on a kNN similarity graph
 - Graph Convolutional Network
 
 ## Evaluation
@@ -23,3 +21,19 @@ Can graph neural networks improve prediction on tabular datasets after construct
 - MAE
 - RMSE
 - R²
+
+## Run
+
+Replicate the currently implemented tabular experiments with:
+
+```bash
+python -m src.experiments.run_diabetes_experiment
+python -m src.experiments.run_parts_experiment
+```
+
+Exploration notebooks:
+
+- `notebooks/01_diabetes_exploration.ipynb`
+- `notebooks/02_castings_exploration.ipynb`
+
+Implementation details and current project status are documented in `docs/`.
